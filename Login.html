@@ -1,68 +1,68 @@
 <!DOCTYPE html>
 <html lang="Pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diário Virtual</title>
-</head>
-<body>
-    <header>
-
-        <nav class="nav-bar">
-            <div class="logo">
-                <h1>Diário Virtual</h1>
-                
-            </div>
-
-            <div class="nav-list">
-                <ul>
-                    <li class="nav-item"><a href="#" class="nav-lik">Início</a></li>
-                    <li class="nav-item"><a href="#" class="nav-lik">Configuração</a></li>
-                    <li class="nav-item"><a href="#" class="nav-lik">Sair</a></li>
-                </ul>
-            </div>
-        </nav>   
-    </header>
-
-      <h2>Olá, Faça seu login</h2>
-
-        <form action="#">
-            <div class="input-group">
-                <div class="input-box">
-                        <label for="Email">E-mail ou usuário</label>
-                        <input id="Email" type="email" name="Email" placeholder="Digite seu E-mail ou usuário" required>
-                    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Diário Virtual</title>
+    </head>
     
-                <div class="input-box">
+    <body>
+        <header>
+            <nav class="nav-bar">
+                <div class="nav-list">
+                    <ul>
+                        <li class="nav-item"><a href="#" class="nav-lik">Início</a></li>
+                        <li class="nav-item"><a href="#" class="nav-lik">Configuração</a></li>
+                        <li class="nav-item"><a href="#" class="nav-lik">Sair</a></li>
+                    </ul>
+                </div>
+            </nav>   
+        </header>
+
+        <main>
+        <h2>Olá, Faça seu login</h2>
+
+            <form action="#">
+                <div class="input-group">
+                    <div class="input-box">
+                        <h2>Diário Virtual</h2>
+                            <label for="Email">E-mail ou usuário</label>
+                            <input id="Email" type="email" name="Email" placeholder="Digite seu E-mail ou usuário" required>
+                    </div>
+        
+                    <div class="input-box">
                         <label for="password">Senha</label>
                         <input id="password" type="password" name="password" placeholder="Digite sua Senha" required>
+                    </div>
+                </div>   
+
+                <div class="Entrar-button">
+                    <button><a href="#">Entrar</a></button>
                 </div>
-            </div>   
-
-            <div class="Cadastrar-button">
-                <button><a href="index2.html">Cadastrar</a></button>
+                <div class="Cadastrar-button">
+                    <button><a href="Cadastro.html">Cadastrar</a></button>
+                </div>
+                <div class="EsqueciSenha-button">
+                    <button><a href="#">Esqueci Senha</a></button>
+                </div>
+                
+            </form> 
+        </main>
+        
+        <footer>
+            <div id="footer_content">
+                <div id="footer_contactos"></div>
             </div>
-            <div class="EsqueciSenha-button">
-                <button><a href="#">Esqueci Senha</a></button>
-            </div>
-            
-        </form> 
 
-    <!------Rodapé ---> 
-
-    <footer>
-    <div id="footer_content">
-        <div id="footer_contactos"></div>
-    </div>
-
-    <ul class="footer-list">
-        <li class="section-item"><p>Todos os direitos reservados.</p></li>
+            <ul class="footer-list">
+                <li class="section-item"><p>Todos os direitos reservados.</p></li>
                 <li class="section-item"><p>Acessibilidade</p></li>
                 <li class="section-item"><p>Termos de serviço</p></li>
                 <li class="section-item"><p>Sobre nós</p></li>
                 <li class="section-item"><p>Contato</p></li>
-    </ul>
-</footer>
+            </ul>
+        </footer>
 
-</body>
+    </body>
 </html>
