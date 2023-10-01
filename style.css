@@ -1,166 +1,308 @@
-body {
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to bottom, #ffffff, #800080);   
+    
 }
 
 header {
-    background-color: rgba(216, 191, 216);
-    padding: 10px 20px;
+    width: 100%;
+    background-color:#dac9df;
     display: flex;
-    justify-content: flex-end;
-}
-.title h1{
-    color: rgb(255,255,255);
-    text-align: center;
+    justify-content: space-around;
+    padding: 20px 0;
 }
 
-.nav-list ul {
-    list-style: none;
+body {
+    background-color: #e5dde6;
+   
+}
+.menu {
+    position: absolute;
+    right: 2px;
+    top: 0;
+    font-size: 20px;
+    padding: 10px;
+}    
+.menu li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.menu li a::after {
+   content: '';
+   width: 0px;
+   height: 4px;
+   position: absolute;
+   top: 30px;
+   left: 0;
+   transition: width 0.5s;
+} 
+
+.menu li a:hover::after {
+   width: 30px;
+
+}
+
+h1{
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    color: #615e5b;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 2px;
+    
+
+}
+
+
+.card {
+    background-color: #ffffff80;
+    padding: 40px;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px #00000070;
     margin: 0;
-    padding: 0;
-    display: flex;
 }
 
-.nav-item {
-    margin-right: 20px;
-}
-
-.nav-lik {
-    text-decoration: none;
-    color: rgba(0,0,0);
-}
-
-
-h2 {
+h2{
     text-align: center;
-    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #615e5b;
 }
 
-form {
-    background-color: rgba(218, 112, 214);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    margin: 0 auto;
-    margin-bottom: 20px; 
-}
-
-.input-group {
-    margin-bottom: 10px;
-}
-
-.input-box {
-    margin-bottom: 30px;
-    color: rgb(255,255,255);
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="email"],
-input[type="password"] {
+.label-float input {
     width: 100%;
     padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 1px solid #615e5b;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    border-radius: 0;
 }
-.gender-inputs{
-    color: rgb(255,255,255);
+
+.label-float {
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 
-.Entrar-button,
-.Cadastrar-button,
-.EsqueciSenha-button,
-.Cancelar-Button {
-    text-align: center;
-    margin-bottom: 8px;
+.label-float input {
+    border-bottom: 2px solid #fdcae1
 }
 
-.Cancelar-Button button,
-.EsqueciSenha-button button{
-    background-color: rgb(250,128,114)
+.label-float label {
+    color: #615e5b;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+    position: absolute;
 }
-.Cadastrar-button button{
-    background-color: rgba(0,255,127);
+
+.label-float input:focus + label {
+    font-size: 13px;
+    margin-top: 0;
+    color: #615e5b;
 }
 
 button {
-    padding: 10px 50px;
-    background-color: rgba(230,230,250);
+    margin: 10px;
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
     border: none;
-    border-radius: 10px;
+    outline: none;
+    border-radius: 40px;
     cursor: pointer;
+    font-size: 1em;
+    color: #000;
+    font-weight: 500;
+    transition: all .4s ease-out;
+}
+
+button:hover{
+    background-color:#e5dde6;
+    color: slategray;
+}
+
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+    margin-top: 10%;
+    margin-top: 10%;
+    width: 60%;
+}
+
+p {
+    color: #615e5b;
+    font-size: 12pt;
+    text-align: center;
+}
+
+a {
+    color:#615e5b;
+    font-weight: bold;
     text-decoration: none;
-    display: inline-block;
+    transition: all .3s ease-out;
 }
 
-
-.content {
-    
-    padding: 20px; 
+a:hover{
+    color: #bd4c42;
 }
-
 
 footer {
-    background-color: rgba(216, 191, 216);
-    color: white;
-    padding: 10px 20px;
-    text-align: right; 
+    background-color: #dac9df;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
 }
 
-
-.footer-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    justify-content: flex-end; 
+    justify-content: space-between;
+    align-items: center;
 }
 
-
-.section-item {
-    margin-left: 20px;
-    color: black;
-}
-
-.section-item p {
+ul {
+    list-style: none;
+    padding: 0;
     margin: 0;
 }
 
+ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+ul li:last-child {
+    margin-right: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.justify-right{
+    color: #615e5b;
+    margin: 15px;
+    display: flex;
+    text-align: center;
+    font-size: 15px;
+}
+
+.gender-inputs {
+    display: flex; 
+    align-items: center; 
+    font-size: 12px;
+    color: #615e5b;
+}
+
+.gender-group {
+    margin-right: 10px;
+}
+
+.containerHome{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    resize: none;
+}
 
 @media screen and (max-width: 768px) {
-
     header {
-        padding: 10px;
-        justify-content: center;
-    }
-
-    .nav-list ul {
         flex-direction: column;
-        align-items: center;
+        text-align: center;
     }
 
-    .nav-item {
-        margin-right: 0;
-        margin-bottom: 10px;
+    .menu {
+        position: relative;
+        right: auto;
+        top: auto;
+        text-align: center;
     }
 
-    form {
-        width: 90%;
-        max-width: 400px;
+    .menu li {
+        display: block;
+        margin: 10px 0;
     }
 
-    .input-box {
-        margin-bottom: 15px;
+    .menu li a::after {
+        display: none;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    .container {
+        margin: 20px;
+    }
+
+    .card {
+        padding: 20px;
     }
 
     button {
-        width: 100%;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    hr {
+        margin-top: 5%;
+    }
+
+    .justify-right {
+        margin: 10px;
+        font-size: 14px;
+    }
+}
+
+/* Estilos para telas médias (768px a 1024px de largura) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    header {
+        padding: 10px 0;
+    }
+
+    .menu li {
+        margin: 0 10px;
+    }
+}
+
+/* Estilos para telas grandes (acima de 1024px de largura) */
+@media screen and (min-width: 1025px) {
+    header {
+        padding: 20px 0;
     }
 }

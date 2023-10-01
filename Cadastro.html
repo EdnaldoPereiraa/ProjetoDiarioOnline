@@ -1,123 +1,86 @@
 <!DOCTYPE html>
-<html lang="Pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Diário Virtual</title>
-    </head>
-    <body>
-        <header>
-            <nav class="nav-bar">
-                <div class="nav-list">
-                    <ul>
-                        <li class="nav-item"><a href="#" class="nav-lik">Início</a></li>
-                        <li class="nav-item"><a href="#" class="nav-lik">Configuração</a></li>
-                        <li class="nav-item"><a href="#" class="nav-lik">Sair</a></li>
-                    </ul>
-                </div>
-            </nav>   
-        </header>
-
-        <H2>Bem vindo(a) ao Diário Virtual!</H2>
-
-        <div class="form">
-            <form action="#">
-                <div class="form-header">
-                    <div class="title">
-                        <h1>Cadastre-se</h1>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <div class="input-box">
-                        <label for="Email">E-mail</label>
-                        <input id="Email" type="email" name="Email" placeholder="Digite seu E-mail" required>
-                    </div>
-            
-                    <div class="input-box">
-                        <label for="name">Nome de Usuário</label>
-                        <input id="name" type="text" name="name" placeholder="Digite o nome de usuário" required>
-                    </div>
-            
-                    <div class="input-box">
-                        <label for="name">Como gostaria de ser chamado(a)</label>
-                        <input id="name" type="text" name="name" placeholder="Digite um apelidio" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="password">Senha</label>
-                        <input id="password" type="password" name="password" placeholder="Digite sua Senha" required>
-                    </div>
-            
-                    <div class="input-box">
-                        <label for="password">Confirme sua senha</label>
-                        <input id="password" type="password" name="Confirmpassword" placeholder="Confirme sua senha" required>
-                    </div>
-                            
-                    <div class="input-box">
-                        <label for="date of birth">Data de Nascimento</label>
-                        <input type="date of birth" type="date" name="date of birth" placeholder="Digite sua data de Nascimento">
-                    </div>    
-                </div>
-            
-                <div class="gender-inputs">
-                    <div class="gender-title">
-                        <h4>Gênero</h4>
-                    </div>
-            
-                    <div class="gender-group">
-                        <div class="gender-input">
-                            <input type="radio" id="female" name="gender">
-                            <label for="female">Feminino</label>
-                        </div>
-                    </div>
-            
-                    <div class="gender-group">
-                        <div class="gender-input">
-                            <input type="radio" id="male" name="gender">
-                            <label for="male">Masculino</label>
-                        </div>
-                    </div>
-            
-                    <div class="gender-group">
-                        <div class="gender-input">
-                            <input type="radio" id="others" name="gender">
-                            <label for="others">Outros</label>
-                        </div>
-                    </div>
-            
-                    <div class="gender-group">
-                        <div class="gender-input">
-                            <input type="radio" id="none" name="gender">
-                            <label for="none">Prefiro não dizer</label>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="Cadastrar-button">
-                    <button><a href="#">Cadastrar</a></button>
-                </div>
-
-                <div class="Cancelar-Button">
-                    <button><a href="Login.html">Cancelar</a></button>
-                </div>
-            </form>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Diário Virtual</title>
+</head>
+<body>
+    <header>
+        
+        <div class="menu">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Configuração</a></li>
+            </ul>
         </div>
-                    
-        <footer>
-            <div id="footer_content">
-                <div id="footer_contactos"></div>
+           
+    </header>
+    <h1 class="logo">Bem-Vinda(o) ao  seu Diário Virtual</h1>
+    <p>Registre suas experiências e memórias diárias de forma simples e segura.</p>
+    <div class="container">
+        <div class="card">
+         <h2> Cadastrar</h2>
+        
+
+            <div class="label-float">
+                <input id="Email" type="email" name="Email"  required>
+                <label for="usuario">E-mail</label>  
             </div>
 
-            <ul class="footer-list">
-                <li class="section-item"><p>Todos os direitos reservados.</p></li>
-                <li class="section-item"><p>Acessibilidade</p></li>
-                <li class="section-item"><p>Termos de serviço</p></li>
-                <li class="section-item"><p>Sobre nós</p></li>
-                <li class="section-item"><p>Contato</p></li>
-            </ul>
-        </footer>
+            <div class="label-float">
+                <input id="Email" type="" name="Email"  required>
+                <label for="usuario">Usuário</label>  
+            </div>
 
-    </body>
+            <div class="label-float">
+                <input type="password" id="senha" placeholder="" required pattern="[a-z0-5]{8,}">
+                 <label for="senha">Senha</label>
+            </div>
+
+            <div class="label-float">
+                <input id="password" type="password" name="Confirmpassword" required pattern="[a-z0-5]{8,}">
+                <label for="password">Confirme sua senha</label>
+                
+            </div>
+            <div class="label-float">
+                <input type="date" name="date of birth">
+                <label for="date of birth"></label>
+            </div>
+
+           
+            <label>Gênero: 
+                <select>
+                  <option>(select one)</option>
+                  <option>Feminino</option>
+                  <option>Masculino</option>
+                  <option>Outros</option>
+                  <option>Prefiro não dizer</option>
+                </select>
+              </label>
+
+            <div class="justify-center">
+                <button onclick=""><a href="home.html">Cadastrar</a></button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Todos os Direitos Reservados</p>
+            <ul>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+                <li><a href="#">Acessibilidade</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
 </html>
+
