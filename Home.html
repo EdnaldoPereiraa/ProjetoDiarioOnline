@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Diário Virtual</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Configuração</a></li>
+                <li><a href="login.html">Sair</a></li>
+            </ul>
+        </div>
+           
+    </header>
+    <h1>Meu Diário Virtual</h1>
+    <div class="containerHome">
+        <h2>Nova Postagem</h2>
+        <input type="text" id="titulo" placeholder="Título">
+        <textarea id="entry" rows="5" placeholder="Escreva sobre o seu dia..."></textarea>
+        <label for="humor">Humor do Dia:</label>
+        <select id="humor">
+            <option value="😀">😀 Feliz</option>
+            <option value="😢">😢 Triste</option>
+            <option value="😐">😐 Neutro</option>
+        </select>
+        <button onclick="salvarDiario()">Salvar</button>
+        <h2>Registros Anteriores</h2>
+        <ul id="diario-list"></ul>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Todos os Direitos Reservados</p>
+            <ul>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+                <li><a href="#">Acessibilidade</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
