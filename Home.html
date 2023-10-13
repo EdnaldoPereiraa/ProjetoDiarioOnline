@@ -24,14 +24,21 @@
         <textarea id="entry" rows="5" placeholder="Escreva sobre o seu dia..."></textarea>
         <label for="humor">Humor do Dia:</label>
         <select id="humor">
+            <option value="😄">😄 Muito Feliz</option>
             <option value="😀">😀 Feliz</option>
+            <option value="😎">😎 Legal</option>
             <option value="😢">😢 Triste</option>
+            <option value="😤">😤 Irritado</option>
+            <option value="😴">😴 Sonolento</option>
+            <option value="😰">😰 Preocupado</option>
             <option value="😐">😐 Neutro</option>
         </select>
+        
         <button onclick="salvarDiario()">Salvar</button>
         <h2>Registros Anteriores</h2>
         <ul id="diario-list"></ul>
     </div>
+
     <footer>
         <div class="footer-content">
             <p>&copy; 2023 Todos os Direitos Reservados</p>
