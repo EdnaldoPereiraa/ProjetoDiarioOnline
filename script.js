@@ -17,7 +17,7 @@ function salvarDiario() {
 
     var postagem = document.createElement("li");
 
-    // Use um atributo personalizado para armazenar a data da postagem
+    
     postagem.setAttribute("data-data", data);
 
     var humorText = getHumorText(humor);
@@ -71,7 +71,7 @@ function editarPostagem(button) {
         salvarEdicoes(postagem);
     };
 
-    postagem.appendChild(salvarEdicoesButton); // Adicione o botão "Salvar Edições" à postagem
+    postagem.appendChild(salvarEdicoesButton); // Adiciona um botão "Salvar Edições" à postagem
     button.style.display = "none"; // Oculte o botão "Editar"
 }
 
@@ -116,7 +116,7 @@ function excluirPostagem(button) {
     }
 }
 
-// Função para obter a data atual no formato "YYYY-MM-DD"
+
 function getCurrentDate() {
     var today = new Date();
     var dd = String(today.getDate()).padStart(2, '0');

@@ -21,21 +21,21 @@ header {
 #diario-list li {
     margin-bottom: 10px;
     word-wrap: break-word; /* Isso permite que o texto seja quebrado e se ajuste ao tamanho do contêiner */
-    max-width: 100%; /* Define uma largura máxima para as postagens */
+    max-width: 100%; 
 }
 
 /* Para manter o mesmo tamanho e formato do texto do <textarea> */
 #diario-list li {
     font-size: 16px;
     white-space: pre-wrap; /* Mantém quebras de linha e formatação */
-    font-family: Arial, Helvetica, sans-serif; /* Use a mesma fonte */
+    font-family: Arial, Helvetica, sans-serif; 
 }
 
-/* Responsividade para telas menores */
+
 @media (max-width: 768px) {
     #diario-list li {
-        font-size: 14px; /* Reduz o tamanho da fonte para telas menores */
-        margin-bottom: 8px; /* Reduz a margem inferior para telas menores */
+        font-size: 14px; 
+        margin-bottom: 8px; 
     }
 }
 
