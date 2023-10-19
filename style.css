@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 header {
@@ -13,6 +13,32 @@ header {
     padding: 20px 0;
     box-sizing: border-box;
 }
+#diario-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#diario-list li {
+    margin-bottom: 10px;
+    word-wrap: break-word; /* Isso permite que o texto seja quebrado e se ajuste ao tamanho do contêiner */
+    max-width: 100%; /* Define uma largura máxima para as postagens */
+}
+
+/* Para manter o mesmo tamanho e formato do texto do <textarea> */
+#diario-list li {
+    font-size: 16px;
+    white-space: pre-wrap; /* Mantém quebras de linha e formatação */
+    font-family: Arial, Helvetica, sans-serif; /* Use a mesma fonte */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    #diario-list li {
+        font-size: 14px; /* Reduz o tamanho da fonte para telas menores */
+        margin-bottom: 8px; /* Reduz a margem inferior para telas menores */
+    }
+}
+
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -59,13 +85,14 @@ h1{
     color: #615e5b;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 2px;
-    margin-bottom: 50px; 
+.container { /* Correção do nome da classe */
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 
 
 .card {
@@ -128,7 +155,7 @@ button {
     margin: 10px;
     width: 100%;
     height: 40px;
-    background-color: #fff;
+    background-color: #dac9df;
     border: none;
     outline: none;
     border-radius: 40px;
@@ -143,6 +170,7 @@ button:hover{
     background-color:#e5dde6;
     color: slategray;
 }
+
 
 .justify-center {
     display: flex;
@@ -180,16 +208,13 @@ footer {
     padding: 10px;
     position: fixed;
     bottom: 0;
-    margin-top: 20px; 
 }
 
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
+
 
 ul {
     list-style: none;
