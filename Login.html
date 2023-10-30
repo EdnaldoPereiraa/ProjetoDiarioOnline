@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="style.css">
     <title>Diário Virtual</title>
 </head>
@@ -20,24 +21,20 @@
 
     <div class="container">
         <div class="card">
-            <h2> Login</h2>
+            <h2>Login</h2>
         
             <div class="label-float">
-                <input id="Email" type="email" name="Email"  required>
-                <label for="usuario">E-mail / Usuário</label>  
+                <input id="Email" type="" name=""  required>
+                <label for="email">E-mail / Usuário <i class="uil uil-envelope-alt"></i></label>  
             </div>
 
             <div class="label-float">
-                <div class="icon">
-                    <icon name="lock-closed"></icon>
-                </div>
-
-                <input type="password" id="senha" placeholder="" required pattern="[a-z0-5]{8,}">
-                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder=" " required>
+                <label id="labelSenha" for="senha">Senha <i class="uil uil-lock password"></i></label>
             </div>
 
-            <div class="justify-right">
-                <a href="#">Esqueci senha</a>
+            <div>
+                <a href="#" class="forget">Esqueci senha </a>
             </div>
 
             <div class="justify-center">

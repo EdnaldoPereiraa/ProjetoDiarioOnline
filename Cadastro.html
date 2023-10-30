@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="style.css">
     <title>Diário Virtual</title>
 </head>
@@ -20,43 +21,37 @@
     <p>Registre suas experiências e memórias diárias de forma simples e segura.</p>
     <div class="container">
         <div class="card">
-         <h2> Cadastrar</h2>
+         <h2>Cadastre-se</h2>
         
 
             <div class="label-float">
-                <input id="Email" type="email" name="Email"  required>
-                <label for="usuario">E-mail</label>  
+                <input id="Email" type="" name=""  required>
+                <label for="email">E-mail <i class="uil uil-envelope-alt"></i></label>  
             </div>
 
             <div class="label-float">
-                <input id="Email" type="" name="Email"  required>
-                <label for="usuario">Usuário</label>  
+                <input id="usuario" type="" name="name"  required>
+                <label for="usuario">Usuário <i class="uil uil-user"></i></label>  
             </div>
 
+            
             <div class="label-float">
-                <input type="password" id="senha" placeholder="" required pattern="[a-z0-5]{8,}">
-                 <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder=" " required />
+                <label id="Senha" for="senha">Senha <i class="uil uil-lock password"></i></label>
+                <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i> 
             </div>
+    
+          
 
             <div class="label-float">
-                <input id="password" type="password" name="Confirmpassword" required pattern="[a-z0-5]{8,}">
-                <label for="password">Confirme sua senha</label>
+                <input type="password" id="confirmSenha" placeholder=" " required />
+                <label id="ConfirmSenha" for="confirmSenha">Confirmar Senha <i class="uil uil-lock password"></i></label>
                 
             </div>
             <div class="label-float">
                 <input type="date" name="date of birth">
-                <label for="date of birth"></label>
+                <label for="date of birth">Data de Nascimento</label>
             </div>
-           
-            <label>Gênero: 
-                <select>
-                  <option>(select one)</option>
-                  <option>Feminino</option>
-                  <option>Masculino</option>
-                  <option>Outros</option>
-                  <option>Prefiro não dizer</option>
-                </select>
-            </label>
 
             <div class="justify-center">
                 <button onclick=""><a href="home.html">Cadastrar</a></button>
